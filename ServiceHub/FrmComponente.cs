@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ServiceHubClass;
 
 
 namespace ServiceHub
@@ -20,6 +21,15 @@ namespace ServiceHub
 
         private void FrmComponente_Load(object sender, EventArgs e)
         {
+            // Categoria
+            Categoria cat = new Categoria("Secos", "sec");
+            cat.Inserir();
+            MessageBox.Show(cat.Id.ToString());
+
+            var categoria = Categoria.ObterPorId(145);
+
+
+
             var cmd = Banco.Abrir();
             cmd.CommandText = "select * from servicos";
             var dr = cmd.ExecuteReader();
