@@ -25,12 +25,21 @@ namespace ServiceHub
             //Categoria cat = new Categoria("Secos", "sec");
             //cat.Inserir();
             //MessageBox.Show(cat.Id.ToString());
-
             //var categoria = Categoria.ObterPorId(145);
 
+            Categoria cat = new(1, "Panaficação", "pan");
+            if (cat.Atualizar()) // se retornar verdadeiro
+            {
+                string msg = "Categoria alterada com sucesso!";
+            }
+            else
+            {
+                string msg = $"Falha ao altera a Categoria {cat.Id}";
+            }
 
 
-            var cmd = Banco.Abrir();
+
+                var cmd = Banco.Abrir();
             cmd.CommandText = "select * from servicos";
             var dr = cmd.ExecuteReader();
             while (dr.Read()) 

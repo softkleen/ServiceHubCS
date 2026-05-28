@@ -12,7 +12,7 @@ namespace ServiceHub
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
        
-            Application.Run(new FrmServico());
+            Application.Run(new FrmCategorias());
         }
     }
 }
