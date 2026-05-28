@@ -21,12 +21,12 @@ namespace ServiceHub
 
         private void FrmComponente_Load(object sender, EventArgs e)
         {
-            // Categoria
-            Categoria cat = new Categoria("Secos", "sec");
-            cat.Inserir();
-            MessageBox.Show(cat.Id.ToString());
+            //// Categoria
+            //Categoria cat = new Categoria("Secos", "sec");
+            //cat.Inserir();
+            //MessageBox.Show(cat.Id.ToString());
 
-            var categoria = Categoria.ObterPorId(145);
+            //var categoria = Categoria.ObterPorId(145);
 
 
 
