@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
             btnCancelar = new Button();
             btnExcluir = new Button();
             btnPesquisar = new Button();
@@ -80,6 +79,7 @@
             btnExcluir.Text = "E&xcluir";
             btnExcluir.TextImageRelation = TextImageRelation.ImageAboveText;
             btnExcluir.UseVisualStyleBackColor = true;
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // btnPesquisar
             // 
@@ -112,6 +112,7 @@
             btnEditar.Text = "&Editar";
             btnEditar.TextImageRelation = TextImageRelation.ImageAboveText;
             btnEditar.UseVisualStyleBackColor = true;
+            btnEditar.Click += btnEditar_Click;
             // 
             // btnAdd
             // 
@@ -215,13 +216,15 @@
             dgvCategorias.Name = "dgvCategorias";
             dgvCategorias.ReadOnly = true;
             dgvCategorias.RowHeadersVisible = false;
+            dgvCategorias.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dgvCategorias.Size = new Size(470, 207);
             dgvCategorias.TabIndex = 29;
+            dgvCategorias.CellClick += dgvCategorias_CellClick;
+            dgvCategorias.CellContentClick += dgvCategorias_CellContentClick;
+            dgvCategorias.SelectionChanged += dgvCategorias_SelectionChanged;
             // 
             // Column1
             // 
-            dataGridViewCellStyle1.BackColor = Color.Black;
-            Column1.DefaultCellStyle = dataGridViewCellStyle1;
             Column1.Frozen = true;
             Column1.HeaderText = "ID";
             Column1.Name = "Column1";
