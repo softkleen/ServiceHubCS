@@ -149,6 +149,7 @@
             btnSalvar.Size = new Size(150, 35);
             btnSalvar.TabIndex = 10;
             btnSalvar.Text = "&Salvar";
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnEditar
             // 
