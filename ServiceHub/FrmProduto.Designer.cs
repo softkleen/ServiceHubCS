@@ -50,10 +50,12 @@
             label7 = new Label();
             ofdObterImagem = new OpenFileDialog();
             button1 = new Button();
+            dataGridView1 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)nudValorUnit).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudEstoqueMinimo).BeginInit();
             ((System.ComponentModel.ISupportInitialize)nudClasseDesconto).BeginInit();
             ((System.ComponentModel.ISupportInitialize)picImagem).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // txtCodBarras
@@ -239,11 +241,20 @@
             button1.TabIndex = 10;
             button1.Text = "&Buscar";
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(7, 293);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(824, 308);
+            dataGridView1.TabIndex = 18;
+            // 
             // FrmProduto
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(863, 347);
+            ClientSize = new Size(841, 613);
+            Controls.Add(dataGridView1);
             Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -273,6 +284,7 @@
             ((System.ComponentModel.ISupportInitialize)nudEstoqueMinimo).EndInit();
             ((System.ComponentModel.ISupportInitialize)nudClasseDesconto).EndInit();
             ((System.ComponentModel.ISupportInitialize)picImagem).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -299,6 +311,7 @@
         private Button btnSalvar;
         private OpenFileDialog ofdObterImagem;
         private Button button1;
+        private DataGridView dataGridView1;
     }
     #endregion
 }

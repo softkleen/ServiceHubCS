@@ -220,7 +220,6 @@
             dgvCategorias.Size = new Size(470, 207);
             dgvCategorias.TabIndex = 29;
             dgvCategorias.CellClick += dgvCategorias_CellClick;
-            dgvCategorias.CellContentClick += dgvCategorias_CellContentClick;
             dgvCategorias.SelectionChanged += dgvCategorias_SelectionChanged;
             // 
             // Column1

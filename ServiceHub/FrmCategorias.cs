@@ -53,11 +53,7 @@ namespace ServiceHub
             }
         }
 
-        private void dgvCategorias_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-
-        }
+ 
 
         private void dgvCategorias_CellClick(object sender, DataGridViewCellEventArgs e)
         {
